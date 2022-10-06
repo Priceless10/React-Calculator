@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(231, 238, 231);
+}
+.cal {
+  position: relative;
+  display: grid;
+}
+.value {
+  background: greenyellow;
+}
+.cal .value {
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 2px;
+  font-size: 18px;
+}
+.cal button {
+  display: grid;
+  width: 80px;
+  height: 80px;
+  color: rgb(107, 248, 107);
+  background: rgb(18, 27, 1);
+  place-items: center;
+  border: 2px solid rgba(0, 0, 0, rgb(100, 248, 42));
+}
+.cal button:active {
+  background-color: rgb(61, 231, 14);
+  color: rgb(0, 255, 136);
+}
+.cal .numclear {
+  background: rgb(18, 27, 1);
+}
+.cal button.plus {
+  grid-row: span 1;
+  height: 80px;
+}
+.cal button.equal {
+  background: rgb(18, 27, 1);
+}
